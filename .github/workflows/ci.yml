@@ -1,4 +1,8 @@
-name: Dockerized Job Queue CI
+name: Dockerized Job Queue CI/CD
+
+permissions:
+  contents: read
+  packages: write
 
 on:
   push:
@@ -92,3 +96,24 @@ jobs:
 
 # Note: Trivy is configured with exit-code 0, because the scan currently reports HIGH vulnerabilities coming from 
 # system packages in the base Python image, not from the application code itself.
+
+  publish-image:
+    name: Publish Docker image to GHCR
+    runs-on: ubuntu-latest
+    needs:
+      - api-tests
+      - image-scan
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Log in to GHCR
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+
+      - name: Build Docker image
+        run: docker build -t ghcr.io/${{ github.repository_owner }}/dockerized-job-queue:latest .
+
+      - name: Push Docker image
+        run: docker push ghcr.io/${{ github.repository_owner }}/dockerized-job-queue:latest
