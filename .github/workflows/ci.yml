@@ -86,8 +86,9 @@ jobs:
           docker run --rm \
             -v /var/run/docker.sock:/var/run/docker.sock \
             aquasec/trivy:0.69.3 image \
-            --severity HIGH,CRITICAL \ 
-            --exit-code 0 \ 
+            --severity HIGH,CRITICAL \
+            --exit-code 0 \
             jobqueue-app:scan
+
 # Note: Trivy is configured with exit-code 0, because the scan currently reports HIGH vulnerabilities coming from 
 # system packages in the base Python image, not from the application code itself.
