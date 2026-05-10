@@ -1,6 +1,9 @@
 dev:
 	docker compose -f docker-compose.yml -f docker-compose.dev.yml up --build
 
+dev-detached:
+	docker compose -f docker-compose.yml -f docker-compose.dev.yml up --build -d
+
 prod:
 	docker compose -f docker-compose.yml -f docker-compose.prod.yml up --build -d
 
@@ -15,6 +18,9 @@ down-volumes:
 
 logs:
 	docker compose -f docker-compose.yml -f docker-compose.dev.yml logs -f
+
+logs-once:
+	docker compose -f docker-compose.yml -f docker-compose.dev.yml logs
 
 ps:
 	docker compose -f docker-compose.yml -f docker-compose.dev.yml ps
