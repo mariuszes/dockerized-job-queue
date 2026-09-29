@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: worker-deployment
+  namespace: job-queue
+
+spec:
+  selector:
+    matchLabels:
+      app: worker
+  
+  template:
+    metadata:
+      labels:
+        app: worker
+    
+    spec:
+      serviceAccountName: worker-service-account
+      automountServiceAccountToken: false
+      terminationGracePeriodSeconds: 30
+
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        seccompProfile:
+          type: RuntimeDefault
+       
+      containers:
+        - name: worker
+          image: dockerized-job-queue:local
+          imagePullPolicy: Never
+          command: ["python", "-m", "app.worker.worker"]
+          
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+                - ALL
+
+          envFrom:
+            - configMapRef:
+                name: postgres-config
+
+          env:
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-credentials-secret
+                  key: APP_USER
+
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-credentials-secret
+                  key: APP_PASSWORD
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "256Mi"

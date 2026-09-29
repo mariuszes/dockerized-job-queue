@@ -1,0 +1,75 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: worker-deployment
+  namespace: job-queue
+
+spec:
+  selector:
+    matchLabels:
+      app: worker
+  
+  template:
+    metadata:
+      labels:
+        app: worker
+    
+    spec:
+      $patch: replace
+      serviceAccountName: worker-service-account
+      automountServiceAccountToken: false
+      terminationGracePeriodSeconds: 30
+
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        seccompProfile:
+          type: RuntimeDefault
+       
+      containers:
+        - name: worker
+          image: 636993912104.dkr.ecr.eu-central-1.amazonaws.com/job-queue:latest
+          imagePullPolicy: Always
+          command: ["python", "-m", "app.worker.worker"]
+          
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+                - ALL
+
+          envFrom:
+            - configMapRef:
+                name: postgres-config
+
+          env:
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: sms-postgres-credentials-secret
+                  key: APP_USER
+
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: sms-postgres-credentials-secret
+                  key: APP_PASSWORD
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "256Mi"
+          volumeMounts:
+            - name: secrets-store
+              mountPath: "/mnt/secrets-store"
+              readOnly: true
+      volumes:
+        - name: secrets-store
+          csi:
+            driver: secrets-store.csi.k8s.io
+            readOnly: true
+            volumeAttributes:
+              secretProviderClass: aws-secrets

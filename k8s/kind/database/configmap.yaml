@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: postgres-config
+  namespace: job-queue
+
+data:
+  POSTGRES_DB: jobsdb
+  POSTGRES_HOST: postgres-service
+  POSTGRES_PORT: "5432"

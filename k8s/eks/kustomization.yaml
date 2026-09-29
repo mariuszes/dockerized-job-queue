@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../kind
+  - secrets/secretproviderclass.yaml
+
+patches:
+  - path: app/api-deployment.yaml
+  - path: app/worker-deployment.yaml
+  - path: database/postgres-statefulset.yaml
+  - path: database/storageclass.yaml
+  - path: gateway/envoyproxy.yaml
+  - path: gateway/gateway.yaml
+  - path: secrets/remove-kind-secret.yaml
+

@@ -1,0 +1,28 @@
+# python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# virtual environment
+.venv/
+
+# environment files
+.env
+.env.*
+!.env.example
+
+# ide
+.idea/
+.vscode
+
+# local tls certs 
+k8s/kind/gateway/certs/*
+!k8s/kind/gateway/certs/.gitkeep
+
+# terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+/terraform-test/

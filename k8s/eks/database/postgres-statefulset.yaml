@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: StatefulSet
+
+metadata:
+  name: postgres
+  namespace: job-queue
+
+spec:
+  template:
+    spec:
+      containers:
+        - name: postgres
+          envFrom:
+            - configMapRef:
+                name: postgres-config
+
+          env:
+            # to keep postgres data in subdirectory and avoid the EBS lost+found dir
+            - name: PGDATA
+              value: /var/lib/postgresql/data/pgdata
+
+            # secrets manager was added mainly for learning and is synced by the api or worker csi mount
+            # doing the same properly for postgres would mean repeating extra terraform and kubernetes setup i already practiced
+            # for simplicity postgres reuses that secret which makes it depend on api or worker and is not a clean design
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: sms-postgres-credentials-secret
+                  key: POSTGRES_USER
+
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: sms-postgres-credentials-secret
+                  key: POSTGRES_PASSWORD
+
+            - name: APP_USER
+              valueFrom:
+                secretKeyRef:
+                  name: sms-postgres-credentials-secret
+                  key: APP_USER
+
+            - name: APP_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: sms-postgres-credentials-secret
+                  key: APP_PASSWORD

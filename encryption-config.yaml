@@ -1,0 +1,13 @@
+apiVersion: apiserver.config.k8s.io/v1
+kind: EncryptionConfiguration
+
+resources:
+  - resources:
+      - secrets
+    providers:
+      - secretbox:
+          keys:
+            - name: key-demo
+              # Demo key only, secretbox = 32 bytes, base64 encoded
+              secret: MDEyMzAxMjMwMTIzMDEyMzAxMjMwMTIzMDEyMzAxMjM=
+      - identity: {}

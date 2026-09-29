@@ -1,0 +1,40 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+
+metadata:
+  name: worker-scaledobject
+  namespace: job-queue
+
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: worker-deployment
+
+  pollingInterval: 5
+  cooldownPeriod: 30
+
+  minReplicaCount: 0
+  maxReplicaCount: 5
+
+  advanced:
+    horizontalPodAutoscalerConfig:
+      behavior:
+        scaleDown:
+          stabilizationWindowSeconds: 60
+          policies:
+            - type: Pods
+              value: 1
+              periodSeconds: 15
+
+  triggers:
+    - type: postgresql
+      metadata:
+        host: postgres-service.job-queue.svc.cluster.local
+        port: "5432"
+        userName: jobuser
+        passwordFromEnv: POSTGRES_PASSWORD
+        dbName: jobsdb
+        sslmode: disable  
+        query: "SELECT COUNT(*) FROM jobs WHERE status = 'pending';"
+        targetQueryValue: "3"

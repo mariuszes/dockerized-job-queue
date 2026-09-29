@@ -14,6 +14,15 @@ def test_health_endpoint():
     data = response.json()
 
     assert data["status"] == "ok"
+
+def test_ready_endpoint():
+    response = httpx.get(f"{BASE_URL}/ready")
+
+    assert response.status_code == 200
+
+    data = response.json()
+
+    assert data["status"] == "ok"
     assert data["database"] == "connected"
 
 

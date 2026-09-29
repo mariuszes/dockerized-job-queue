@@ -1,5 +1,6 @@
 # git
 .git
+.github
 .gitignore
 
 # python cache
@@ -17,3 +18,8 @@ __pycache__/
 # ide
 .idea/
 .vscode/
+
+# terraform local files
+**/.terraform/
+*.tfstate
+*.tfstate.*

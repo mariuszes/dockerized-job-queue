@@ -1,26 +1,20 @@
-from contextlib import asynccontextmanager
-
 from fastapi import FastAPI, HTTPException
-
-from app.db.init_db import create_tables
 
 from app.db.database import check_database_connection, create_job, get_jobs, get_job_by_id
 from app.schemas.job import JobCreate
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    # code when turning on
-    create_tables()
-    yield # fastapi works
-    # code when turning off
-
 app = FastAPI(
     title="Dockerized Job Queue Platform",
-    lifespan=lifespan
 )
 
 @app.get("/health")
 def health():
+    return {
+        "status": "ok",
+    }
+
+@app.get("/ready")
+def ready():
     database_ok = check_database_connection()
 
     if database_ok:
@@ -29,10 +23,10 @@ def health():
             "database": "connected",
         }
 
-    return {
-        "status": "error",
-        "database": "not connected",
-    }
+    raise HTTPException(
+        status_code=503,
+        detail="Database not connected",
+    )
 
 @app.post("/jobs")
 def add_job(job: JobCreate):

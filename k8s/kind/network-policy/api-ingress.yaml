@@ -1,0 +1,28 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+
+metadata:
+  name: api-ingress
+  namespace: job-queue
+
+spec:
+  podSelector:
+    matchLabels:
+      app: api
+  
+  policyTypes:
+    - Ingress
+  
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              kubernetes.io/metadata.name: envoy-gateway-system
+          podSelector:
+            matchLabels:
+              app.kubernetes.io/component: proxy
+              gateway.envoyproxy.io/owning-gateway-name: api-gateway
+              gateway.envoyproxy.io/owning-gateway-namespace: job-queue
+      ports:
+        - protocol: TCP
+          port: 8000

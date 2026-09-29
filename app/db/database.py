@@ -12,7 +12,7 @@ def check_database_connection() -> bool:
         return result == (1,)
 
     except Exception as error:
-        print(f"Databse connection error: {error}")
+        print(f"Database connection error: {error}")
         return False
     
 
@@ -144,6 +144,22 @@ def finish_job(job_id: int, result: str) -> None:
 
         connection.commit()
 
+def requeue_job(job_id: int) -> None:
+    with psycopg.connect(DATABASE_URL) as connection:
+        with connection.cursor() as cursor:
+            cursor.execute(
+                """
+                UPDATE jobs
+                SET status = 'pending',
+                    result = NULL,
+                    updated_at = CURRENT_TIMESTAMP
+                WHERE id = %s
+                  AND status = 'processing';
+                """,
+                (job_id,),
+            )
+
+        connection.commit()
 
 def fail_job(job_id: int, error_message: str) -> None:
     with psycopg.connect(DATABASE_URL) as connection:

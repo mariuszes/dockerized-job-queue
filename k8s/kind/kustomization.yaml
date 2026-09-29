@@ -1,0 +1,30 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - access-control/serviceaccounts.yaml
+
+  - database/configmap.yaml
+  - database/postgres-credentials-secret.yaml
+  - database/postgres-init-configmap.yaml
+  - database/postgres-service.yaml
+  - database/postgres-statefulset.yaml
+  - database/storageclass.yaml
+
+  - app/api-deployment.yaml
+  - app/api-service.yaml
+  - app/worker-deployment.yaml
+  - app/worker-scaleobject.yaml
+
+  - gateway/gatewayclass.yaml
+  - gateway/gateway.yaml
+  - gateway/envoyproxy.yaml
+  - gateway/api-httproute.yaml
+
+  - network-policy/default-deny-ingress.yaml
+  - network-policy/default-deny-egress.yaml
+  - network-policy/allow-dns-egress.yaml
+  - network-policy/api-ingress.yaml
+  - network-policy/postgres-ingress.yaml
+  - network-policy/postgres-egress.yaml
+
