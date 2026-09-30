@@ -26,6 +26,10 @@ resource "aws_eks_cluster" "job_queue" {
   role_arn = aws_iam_role.cluster.arn
   version  = var.kubernetes_version
 
+  access_config {
+    authentication_mode                         = "API_AND_CONFIG_MAP"
+    bootstrap_cluster_creator_admin_permissions = true
+  }
   vpc_config {
     subnet_ids              = var.subnet_ids
     endpoint_public_access  = true

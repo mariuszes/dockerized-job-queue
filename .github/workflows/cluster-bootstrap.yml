@@ -1,0 +1,63 @@
+name: EKS Cluster Bootstrap
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+env:
+  AWS_REGION: eu-central-1
+  EKS_CLUSTER: job-queue
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v6.3.0
+        with:
+          role-to-assume: arn:aws:iam::636993912104:role/job-queue-github-actions-role
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Configure kubectl
+        run: |
+          aws eks update-kubeconfig \
+            --region $AWS_REGION \
+            --name $EKS_CLUSTER
+
+      - name: Add Helm repositories
+        run: |
+          helm repo add secrets-store-csi-driver https://kubernetes-sigs.github.io/secrets-store-csi-driver/charts
+          helm repo add aws-secrets-manager https://aws.github.io/secrets-store-csi-driver-provider-aws
+          helm repo add kedacore https://kedacore.github.io/charts
+          helm repo update
+
+      - name: Install Secrets Store CSI Driver
+        run: |
+          helm upgrade --install csi-secrets-store secrets-store-csi-driver/secrets-store-csi-driver \
+            --namespace kube-system \
+            --set syncSecret.enabled=true \
+            --set 'tokenRequests[0].audience=sts.amazonaws.com' \
+            --set 'tokenRequests[1].audience=pods.eks.amazonaws.com'
+
+      - name: Install AWS Secrets Store provider
+        run: |
+          helm upgrade --install secrets-provider-aws aws-secrets-manager/secrets-store-csi-driver-provider-aws \
+            --namespace kube-system \
+            --set secrets-store-csi-driver.install=false
+
+      - name: Install KEDA
+        run: |
+          helm upgrade --install keda kedacore/keda \
+            --namespace keda \
+            --create-namespace
+
+      - name: Install Envoy Gateway
+        run: |
+          helm upgrade --install eg oci://docker.io/envoyproxy/gateway-helm \
+            --version v1.8.0 \
+            --namespace envoy-gateway-system \
+            --create-namespace
