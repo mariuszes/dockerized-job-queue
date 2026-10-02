@@ -1,0 +1,525 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1667pt" height="1130pt" viewBox="0.00 0.00 1667.00 1130.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1126)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-1126 1662.57,-1126 1662.57,4 -4,4"/>
+<g id="clust1" class="cluster">
+<title>cluster_module.app_aws</title>
+<path fill="#f1fffb" stroke="#8fd3c1" d="M279.23,-196C279.23,-196 1315.99,-196 1315.99,-196 1321.99,-196 1327.99,-202 1327.99,-208 1327.99,-208 1327.99,-530 1327.99,-530 1327.99,-536 1321.99,-542 1315.99,-542 1315.99,-542 279.23,-542 279.23,-542 273.23,-542 267.23,-536 267.23,-530 267.23,-530 267.23,-208 267.23,-208 267.23,-202 273.23,-196 279.23,-196"/>
+<text xml:space="preserve" text-anchor="middle" x="797.61" y="-527.2" font-family="sans-serif" font-size="12.00">module.app_aws</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_module.eks</title>
+<path fill="#fff8f2" stroke="#f4b183" d="M58.99,-550C58.99,-550 1638.57,-550 1638.57,-550 1644.57,-550 1650.57,-556 1650.57,-562 1650.57,-562 1650.57,-884 1650.57,-884 1650.57,-890 1644.57,-896 1638.57,-896 1638.57,-896 58.99,-896 58.99,-896 52.99,-896 46.99,-890 46.99,-884 46.99,-884 46.99,-562 46.99,-562 46.99,-556 52.99,-550 58.99,-550"/>
+<text xml:space="preserve" text-anchor="middle" x="848.78" y="-881.2" font-family="sans-serif" font-size="12.00">module.eks</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_module.network</title>
+<path fill="#faf7ff" stroke="#b197fc" d="M597.74,-904C597.74,-904 1291.84,-904 1291.84,-904 1297.84,-904 1303.84,-910 1303.84,-916 1303.84,-916 1303.84,-1102 1303.84,-1102 1303.84,-1108 1297.84,-1114 1291.84,-1114 1291.84,-1114 597.74,-1114 597.74,-1114 591.74,-1114 585.74,-1108 585.74,-1102 585.74,-1102 585.74,-916 585.74,-916 585.74,-910 591.74,-904 597.74,-904"/>
+<text xml:space="preserve" text-anchor="middle" x="944.79" y="-1099.2" font-family="sans-serif" font-size="12.00">module.network</text>
+</g>
+<!-- data.aws_iam_policy_document.github_assume_role -->
+<g id="node1" class="node">
+<title>data.aws_iam_policy_document.github_assume_role</title>
+<path fill="#fff3bf" stroke="#666666" d="M1058.74,-104C1058.74,-104 854.57,-104 854.57,-104 848.57,-104 842.57,-98 842.57,-92 842.57,-92 842.57,-80 842.57,-80 842.57,-74 848.57,-68 854.57,-68 854.57,-68 1058.74,-68 1058.74,-68 1064.74,-68 1070.74,-74 1070.74,-80 1070.74,-80 1070.74,-92 1070.74,-92 1070.74,-98 1064.74,-104 1058.74,-104"/>
+<text xml:space="preserve" text-anchor="middle" x="956.66" y="-83" font-family="sans-serif" font-size="10.00">data.aws_iam_policy_document.github_assume_role</text>
+</g>
+<!-- aws_iam_openid_connect_provider.github -->
+<g id="node5" class="node">
+<title>aws_iam_openid_connect_provider.github</title>
+<path fill="#e5dbff" stroke="#666666" d="M1329.66,-104C1329.66,-104 1166.87,-104 1166.87,-104 1160.87,-104 1154.87,-98 1154.87,-92 1154.87,-92 1154.87,-80 1154.87,-80 1154.87,-74 1160.87,-68 1166.87,-68 1166.87,-68 1329.66,-68 1329.66,-68 1335.66,-68 1341.66,-74 1341.66,-80 1341.66,-80 1341.66,-92 1341.66,-92 1341.66,-98 1335.66,-104 1329.66,-104"/>
+<text xml:space="preserve" text-anchor="middle" x="1248.27" y="-83" font-family="sans-serif" font-size="10.00">aws_iam_openid_connect_provider.github</text>
+</g>
+<!-- data.aws_iam_policy_document.github_assume_role&#45;&gt;aws_iam_openid_connect_provider.github -->
+<g id="edge1" class="edge">
+<title>data.aws_iam_policy_document.github_assume_role-&gt;aws_iam_openid_connect_provider.github</title>
+<path fill="none" stroke="#7a7a7a" d="M1070.87,-86C1095.82,-86 1122.07,-86 1146.49,-86"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="1146.18,-88.45 1153.18,-86 1146.18,-83.55 1146.18,-88.45"/>
+</g>
+<!-- data.aws_iam_policy_document.github_eks -->
+<g id="node2" class="node">
+<title>data.aws_iam_policy_document.github_eks</title>
+<path fill="#fff3bf" stroke="#666666" d="M756.72,-36C756.72,-36 589.21,-36 589.21,-36 583.21,-36 577.21,-30 577.21,-24 577.21,-24 577.21,-12 577.21,-12 577.21,-6 583.21,0 589.21,0 589.21,0 756.72,0 756.72,0 762.72,0 768.72,-6 768.72,-12 768.72,-12 768.72,-24 768.72,-24 768.72,-30 762.72,-36 756.72,-36"/>
+<text xml:space="preserve" text-anchor="middle" x="672.97" y="-15" font-family="sans-serif" font-size="10.00">data.aws_iam_policy_document.github_eks</text>
+</g>
+<!-- aws_eks_access_entry.github_actions -->
+<g id="node3" class="node">
+<title>aws_eks_access_entry.github_actions</title>
+<path fill="#ffd8a8" stroke="#666666" d="M467.22,-172C467.22,-172 323.87,-172 323.87,-172 317.87,-172 311.87,-166 311.87,-160 311.87,-160 311.87,-148 311.87,-148 311.87,-142 317.87,-136 323.87,-136 323.87,-136 467.22,-136 467.22,-136 473.22,-136 479.22,-142 479.22,-148 479.22,-148 479.22,-160 479.22,-160 479.22,-166 473.22,-172 467.22,-172"/>
+<text xml:space="preserve" text-anchor="middle" x="395.54" y="-151" font-family="sans-serif" font-size="10.00">aws_eks_access_entry.github_actions</text>
+</g>
+<!-- aws_iam_role.github_actions -->
+<g id="node6" class="node">
+<title>aws_iam_role.github_actions</title>
+<path fill="#d0ebff" stroke="#666666" d="M727.7,-104C727.7,-104 618.23,-104 618.23,-104 612.23,-104 606.23,-98 606.23,-92 606.23,-92 606.23,-80 606.23,-80 606.23,-74 612.23,-68 618.23,-68 618.23,-68 727.7,-68 727.7,-68 733.7,-68 739.7,-74 739.7,-80 739.7,-80 739.7,-92 739.7,-92 739.7,-98 733.7,-104 727.7,-104"/>
+<text xml:space="preserve" text-anchor="middle" x="672.97" y="-83" font-family="sans-serif" font-size="10.00">aws_iam_role.github_actions</text>
+</g>
+<!-- aws_eks_access_entry.github_actions&#45;&gt;aws_iam_role.github_actions -->
+<g id="edge2" class="edge">
+<title>aws_eks_access_entry.github_actions-&gt;aws_iam_role.github_actions</title>
+<path fill="none" stroke="#7a7a7a" d="M471.44,-135.51C510.7,-125.82 558.63,-113.98 597.79,-104.31"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="598.32,-106.71 604.53,-102.65 597.15,-101.95 598.32,-106.71"/>
+</g>
+<!-- module.eks.aws_eks_cluster.job_queue -->
+<g id="node25" class="node">
+<title>module.eks.aws_eks_cluster.job_queue</title>
+<path fill="#ffd8a8" stroke="#666666" d="M723.81,-594C723.81,-594 622.12,-594 622.12,-594 616.12,-594 610.12,-588 610.12,-582 610.12,-582 610.12,-570 610.12,-570 610.12,-564 616.12,-558 622.12,-558 622.12,-558 723.81,-558 723.81,-558 729.81,-558 735.81,-564 735.81,-570 735.81,-570 735.81,-582 735.81,-582 735.81,-588 729.81,-594 723.81,-594"/>
+<text xml:space="preserve" text-anchor="middle" x="672.97" y="-573" font-family="sans-serif" font-size="10.00">aws_eks_cluster.job_queue</text>
+</g>
+<!-- aws_eks_access_entry.github_actions&#45;&gt;module.eks.aws_eks_cluster.job_queue -->
+<g id="edge3" class="edge">
+<title>aws_eks_access_entry.github_actions-&gt;module.eks.aws_eks_cluster.job_queue</title>
+<path fill="none" stroke="#7a7a7a" d="M479.44,-164.27C493.24,-169.44 506.19,-176.99 515.86,-188 623.2,-310.23 460.8,-429.3 569.86,-550 578.36,-559.41 589.74,-565.63 601.82,-569.7"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="600.98,-572 608.39,-571.64 602.37,-567.3 600.98,-572"/>
+</g>
+<!-- aws_eks_access_policy_association.github_actions -->
+<g id="node4" class="node">
+<title>aws_eks_access_policy_association.github_actions</title>
+<path fill="#ffd8a8" stroke="#666666" d="M209.23,-172C209.23,-172 12,-172 12,-172 6,-172 0,-166 0,-160 0,-160 0,-148 0,-148 0,-142 6,-136 12,-136 12,-136 209.23,-136 209.23,-136 215.23,-136 221.23,-142 221.23,-148 221.23,-148 221.23,-160 221.23,-160 221.23,-166 215.23,-172 209.23,-172"/>
+<text xml:space="preserve" text-anchor="middle" x="110.61" y="-151" font-family="sans-serif" font-size="10.00">aws_eks_access_policy_association.github_actions</text>
+</g>
+<!-- aws_eks_access_policy_association.github_actions&#45;&gt;aws_eks_access_entry.github_actions -->
+<g id="edge4" class="edge">
+<title>aws_eks_access_policy_association.github_actions-&gt;aws_eks_access_entry.github_actions</title>
+<path fill="none" stroke="#7a7a7a" d="M221.41,-154C248.46,-154 277.14,-154 303.21,-154"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="303.06,-156.45 310.06,-154 303.06,-151.55 303.06,-156.45"/>
+</g>
+<!-- aws_iam_role.github_actions&#45;&gt;data.aws_iam_policy_document.github_assume_role -->
+<g id="edge5" class="edge">
+<title>aws_iam_role.github_actions-&gt;data.aws_iam_policy_document.github_assume_role</title>
+<path fill="none" stroke="#7a7a7a" d="M740.01,-86C768.12,-86 801.83,-86 834.15,-86"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="833.82,-88.45 840.82,-86 833.82,-83.55 833.82,-88.45"/>
+</g>
+<!-- aws_iam_role_policy.github_eks -->
+<g id="node7" class="node">
+<title>aws_iam_role_policy.github_eks</title>
+<path fill="#c3fae8" stroke="#666666" d="M457.78,-36C457.78,-36 333.31,-36 333.31,-36 327.31,-36 321.31,-30 321.31,-24 321.31,-24 321.31,-12 321.31,-12 321.31,-6 327.31,0 333.31,0 333.31,0 457.78,0 457.78,0 463.78,0 469.78,-6 469.78,-12 469.78,-12 469.78,-24 469.78,-24 469.78,-30 463.78,-36 457.78,-36"/>
+<text xml:space="preserve" text-anchor="middle" x="395.54" y="-15" font-family="sans-serif" font-size="10.00">aws_iam_role_policy.github_eks</text>
+</g>
+<!-- aws_iam_role_policy.github_eks&#45;&gt;data.aws_iam_policy_document.github_eks -->
+<g id="edge6" class="edge">
+<title>aws_iam_role_policy.github_eks-&gt;data.aws_iam_policy_document.github_eks</title>
+<path fill="none" stroke="#7a7a7a" d="M469.99,-18C500.25,-18 535.85,-18 568.67,-18"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="568.43,-20.45 575.43,-18 568.43,-15.55 568.43,-20.45"/>
+</g>
+<!-- aws_iam_role_policy.github_eks&#45;&gt;aws_iam_role.github_actions -->
+<g id="edge7" class="edge">
+<title>aws_iam_role_policy.github_eks-&gt;aws_iam_role.github_actions</title>
+<path fill="none" stroke="#7a7a7a" d="M469.99,-36.13C509.58,-45.91 558.3,-57.94 597.98,-67.73"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="596.93,-70 604.32,-69.3 598.11,-65.24 596.93,-70"/>
+</g>
+<!-- aws_iam_role_policy_attachment.github_ecr -->
+<g id="node8" class="node">
+<title>aws_iam_role_policy_attachment.github_ecr</title>
+<path fill="#d3f9d8" stroke="#666666" d="M481.65,-104C481.65,-104 309.43,-104 309.43,-104 303.43,-104 297.43,-98 297.43,-92 297.43,-92 297.43,-80 297.43,-80 297.43,-74 303.43,-68 309.43,-68 309.43,-68 481.65,-68 481.65,-68 487.65,-68 493.65,-74 493.65,-80 493.65,-80 493.65,-92 493.65,-92 493.65,-98 487.65,-104 481.65,-104"/>
+<text xml:space="preserve" text-anchor="middle" x="395.54" y="-83" font-family="sans-serif" font-size="10.00">aws_iam_role_policy_attachment.github_ecr</text>
+</g>
+<!-- aws_iam_role_policy_attachment.github_ecr&#45;&gt;aws_iam_role.github_actions -->
+<g id="edge8" class="edge">
+<title>aws_iam_role_policy_attachment.github_ecr-&gt;aws_iam_role.github_actions</title>
+<path fill="none" stroke="#7a7a7a" d="M494.03,-86C528.13,-86 565.83,-86 597.71,-86"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="597.6,-88.45 604.6,-86 597.6,-83.55 597.6,-88.45"/>
+</g>
+<!-- module.app_aws.data.aws_iam_policy_document.pod_identity_assume_role -->
+<g id="node9" class="node">
+<title>module.app_aws.data.aws_iam_policy_document.pod_identity_assume_role</title>
+<path fill="#fff3bf" stroke="#666666" d="M1071.24,-444C1071.24,-444 842.07,-444 842.07,-444 836.07,-444 830.07,-438 830.07,-432 830.07,-432 830.07,-420 830.07,-420 830.07,-414 836.07,-408 842.07,-408 842.07,-408 1071.24,-408 1071.24,-408 1077.24,-408 1083.24,-414 1083.24,-420 1083.24,-420 1083.24,-432 1083.24,-432 1083.24,-438 1077.24,-444 1071.24,-444"/>
+<text xml:space="preserve" text-anchor="middle" x="956.66" y="-423" font-family="sans-serif" font-size="10.00">data.aws_iam_policy_document.pod_identity_assume_role</text>
+</g>
+<!-- module.app_aws.data.aws_iam_policy_document.secret_access -->
+<g id="node10" class="node">
+<title>module.app_aws.data.aws_iam_policy_document.secret_access</title>
+<path fill="#fff3bf" stroke="#666666" d="M1045.4,-342C1045.4,-342 867.92,-342 867.92,-342 861.92,-342 855.92,-336 855.92,-330 855.92,-330 855.92,-318 855.92,-318 855.92,-312 861.92,-306 867.92,-306 867.92,-306 1045.4,-306 1045.4,-306 1051.4,-306 1057.4,-312 1057.4,-318 1057.4,-318 1057.4,-330 1057.4,-330 1057.4,-336 1051.4,-342 1045.4,-342"/>
+<text xml:space="preserve" text-anchor="middle" x="956.66" y="-321" font-family="sans-serif" font-size="10.00">data.aws_iam_policy_document.secret_access</text>
+</g>
+<!-- module.app_aws.aws_secretsmanager_secret.app -->
+<g id="node19" class="node">
+<title>module.app_aws.aws_secretsmanager_secret.app</title>
+<path fill="#ffddeb" stroke="#666666" d="M1307.99,-342C1307.99,-342 1188.55,-342 1188.55,-342 1182.55,-342 1176.55,-336 1176.55,-330 1176.55,-330 1176.55,-318 1176.55,-318 1176.55,-312 1182.55,-306 1188.55,-306 1188.55,-306 1307.99,-306 1307.99,-306 1313.99,-306 1319.99,-312 1319.99,-318 1319.99,-318 1319.99,-330 1319.99,-330 1319.99,-336 1313.99,-342 1307.99,-342"/>
+<text xml:space="preserve" text-anchor="middle" x="1248.27" y="-321" font-family="sans-serif" font-size="10.00">aws_secretsmanager_secret.app</text>
+</g>
+<!-- module.app_aws.data.aws_iam_policy_document.secret_access&#45;&gt;module.app_aws.aws_secretsmanager_secret.app -->
+<g id="edge9" class="edge">
+<title>module.app_aws.data.aws_iam_policy_document.secret_access-&gt;module.app_aws.aws_secretsmanager_secret.app</title>
+<path fill="none" stroke="#7a7a7a" d="M1057.73,-324C1093.75,-324 1133.87,-324 1167.89,-324"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="1167.89,-326.45 1174.89,-324 1167.89,-321.55 1167.89,-326.45"/>
+</g>
+<!-- module.app_aws.aws_ecr_repository.app -->
+<g id="node11" class="node">
+<title>module.app_aws.aws_ecr_repository.app</title>
+<path fill="#ffe8cc" stroke="#666666" d="M439.17,-240C439.17,-240 351.92,-240 351.92,-240 345.92,-240 339.92,-234 339.92,-228 339.92,-228 339.92,-216 339.92,-216 339.92,-210 345.92,-204 351.92,-204 351.92,-204 439.17,-204 439.17,-204 445.17,-204 451.17,-210 451.17,-216 451.17,-216 451.17,-228 451.17,-228 451.17,-234 445.17,-240 439.17,-240"/>
+<text xml:space="preserve" text-anchor="middle" x="395.54" y="-219" font-family="sans-serif" font-size="10.00">aws_ecr_repository.app</text>
+</g>
+<!-- module.app_aws.aws_eks_pod_identity_association.api -->
+<g id="node12" class="node">
+<title>module.app_aws.aws_eks_pod_identity_association.api</title>
+<path fill="#ffd8a8" stroke="#666666" d="M468.34,-444C468.34,-444 322.75,-444 322.75,-444 316.75,-444 310.75,-438 310.75,-432 310.75,-432 310.75,-420 310.75,-420 310.75,-414 316.75,-408 322.75,-408 322.75,-408 468.34,-408 468.34,-408 474.34,-408 480.34,-414 480.34,-420 480.34,-420 480.34,-432 480.34,-432 480.34,-438 474.34,-444 468.34,-444"/>
+<text xml:space="preserve" text-anchor="middle" x="395.54" y="-423" font-family="sans-serif" font-size="10.00">aws_eks_pod_identity_association.api</text>
+</g>
+<!-- module.app_aws.aws_iam_role.api -->
+<g id="node15" class="node">
+<title>module.app_aws.aws_iam_role.api</title>
+<path fill="#d0ebff" stroke="#666666" d="M704.37,-410C704.37,-410 641.56,-410 641.56,-410 635.56,-410 629.56,-404 629.56,-398 629.56,-398 629.56,-386 629.56,-386 629.56,-380 635.56,-374 641.56,-374 641.56,-374 704.37,-374 704.37,-374 710.37,-374 716.37,-380 716.37,-386 716.37,-386 716.37,-398 716.37,-398 716.37,-404 710.37,-410 704.37,-410"/>
+<text xml:space="preserve" text-anchor="middle" x="672.97" y="-389" font-family="sans-serif" font-size="10.00">aws_iam_role.api</text>
+</g>
+<!-- module.app_aws.aws_eks_pod_identity_association.api&#45;&gt;module.app_aws.aws_iam_role.api -->
+<g id="edge10" class="edge">
+<title>module.app_aws.aws_eks_pod_identity_association.api-&gt;module.app_aws.aws_iam_role.api</title>
+<path fill="none" stroke="#7a7a7a" d="M480.68,-415.61C526.61,-409.94 581.96,-403.11 621.28,-398.26"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="621.27,-400.73 627.91,-397.44 620.67,-395.86 621.27,-400.73"/>
+</g>
+<!-- module.app_aws.aws_eks_pod_identity_association.api&#45;&gt;module.eks.aws_eks_cluster.job_queue -->
+<g id="edge11" class="edge">
+<title>module.app_aws.aws_eks_pod_identity_association.api-&gt;module.eks.aws_eks_cluster.job_queue</title>
+<path fill="none" stroke="#7a7a7a" d="M480.61,-441.22C493.2,-445.89 505.43,-452.01 515.86,-460 552.88,-488.38 532.44,-522.15 569.86,-550 579.28,-557.01 590.39,-562.14 601.76,-565.89"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="600.79,-568.16 608.2,-567.84 602.21,-563.47 600.79,-568.16"/>
+</g>
+<!-- module.app_aws.aws_eks_pod_identity_association.worker -->
+<g id="node13" class="node">
+<title>module.app_aws.aws_eks_pod_identity_association.worker</title>
+<path fill="#ffd8a8" stroke="#666666" d="M476.39,-512C476.39,-512 314.7,-512 314.7,-512 308.7,-512 302.7,-506 302.7,-500 302.7,-500 302.7,-488 302.7,-488 302.7,-482 308.7,-476 314.7,-476 314.7,-476 476.39,-476 476.39,-476 482.39,-476 488.39,-482 488.39,-488 488.39,-488 488.39,-500 488.39,-500 488.39,-506 482.39,-512 476.39,-512"/>
+<text xml:space="preserve" text-anchor="middle" x="395.54" y="-491" font-family="sans-serif" font-size="10.00">aws_eks_pod_identity_association.worker</text>
+</g>
+<!-- module.app_aws.aws_iam_role.worker -->
+<g id="node16" class="node">
+<title>module.app_aws.aws_iam_role.worker</title>
+<path fill="#d0ebff" stroke="#666666" d="M712.42,-478C712.42,-478 633.51,-478 633.51,-478 627.51,-478 621.51,-472 621.51,-466 621.51,-466 621.51,-454 621.51,-454 621.51,-448 627.51,-442 633.51,-442 633.51,-442 712.42,-442 712.42,-442 718.42,-442 724.42,-448 724.42,-454 724.42,-454 724.42,-466 724.42,-466 724.42,-472 718.42,-478 712.42,-478"/>
+<text xml:space="preserve" text-anchor="middle" x="672.97" y="-457" font-family="sans-serif" font-size="10.00">aws_iam_role.worker</text>
+</g>
+<!-- module.app_aws.aws_eks_pod_identity_association.worker&#45;&gt;module.app_aws.aws_iam_role.worker -->
+<g id="edge12" class="edge">
+<title>module.app_aws.aws_eks_pod_identity_association.worker-&gt;module.app_aws.aws_iam_role.worker</title>
+<path fill="none" stroke="#7a7a7a" d="M488.64,-482.63C529.78,-477.55 577.05,-471.72 613.29,-467.24"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="613.16,-469.73 619.81,-466.44 612.56,-464.86 613.16,-469.73"/>
+</g>
+<!-- module.app_aws.aws_eks_pod_identity_association.worker&#45;&gt;module.eks.aws_eks_cluster.job_queue -->
+<g id="edge13" class="edge">
+<title>module.app_aws.aws_eks_pod_identity_association.worker-&gt;module.eks.aws_eks_cluster.job_queue</title>
+<path fill="none" stroke="#7a7a7a" d="M450.53,-512.41C484.59,-523.79 529.6,-538.38 569.86,-550 580.08,-552.95 590.93,-555.9 601.6,-558.7"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="600.84,-561.04 608.24,-560.43 602.08,-556.3 600.84,-561.04"/>
+</g>
+<!-- module.app_aws.aws_iam_policy.secret_access -->
+<g id="node14" class="node">
+<title>module.app_aws.aws_iam_policy.secret_access</title>
+<path fill="#c3fae8" stroke="#666666" d="M729.91,-342C729.91,-342 616.02,-342 616.02,-342 610.02,-342 604.02,-336 604.02,-330 604.02,-330 604.02,-318 604.02,-318 604.02,-312 610.02,-306 616.02,-306 616.02,-306 729.91,-306 729.91,-306 735.91,-306 741.91,-312 741.91,-318 741.91,-318 741.91,-330 741.91,-330 741.91,-336 735.91,-342 729.91,-342"/>
+<text xml:space="preserve" text-anchor="middle" x="672.97" y="-321" font-family="sans-serif" font-size="10.00">aws_iam_policy.secret_access</text>
+</g>
+<!-- module.app_aws.aws_iam_policy.secret_access&#45;&gt;module.app_aws.data.aws_iam_policy_document.secret_access -->
+<g id="edge14" class="edge">
+<title>module.app_aws.aws_iam_policy.secret_access-&gt;module.app_aws.data.aws_iam_policy_document.secret_access</title>
+<path fill="none" stroke="#7a7a7a" d="M742.16,-324C773.66,-324 811.84,-324 847.16,-324"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="847.08,-326.45 854.08,-324 847.08,-321.55 847.08,-326.45"/>
+</g>
+<!-- module.app_aws.aws_iam_role.api&#45;&gt;module.app_aws.data.aws_iam_policy_document.pod_identity_assume_role -->
+<g id="edge15" class="edge">
+<title>module.app_aws.aws_iam_role.api-&gt;module.app_aws.data.aws_iam_policy_document.pod_identity_assume_role</title>
+<path fill="none" stroke="#7a7a7a" d="M716.75,-397.16C744.98,-400.57 783.66,-405.24 821.66,-409.83"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="821.01,-412.22 828.26,-410.62 821.6,-407.35 821.01,-412.22"/>
+</g>
+<!-- module.app_aws.aws_iam_role.worker&#45;&gt;module.app_aws.data.aws_iam_policy_document.pod_identity_assume_role -->
+<g id="edge16" class="edge">
+<title>module.app_aws.aws_iam_role.worker-&gt;module.app_aws.data.aws_iam_policy_document.pod_identity_assume_role</title>
+<path fill="none" stroke="#7a7a7a" d="M724.65,-453.88C751.93,-450.59 786.99,-446.36 821.51,-442.19"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="821.64,-444.64 828.29,-441.37 821.05,-439.78 821.64,-444.64"/>
+</g>
+<!-- module.app_aws.aws_iam_role_policy_attachment.api_secret_access -->
+<g id="node17" class="node">
+<title>module.app_aws.aws_iam_role_policy_attachment.api_secret_access</title>
+<path fill="#d3f9d8" stroke="#666666" d="M495.81,-308C495.81,-308 295.28,-308 295.28,-308 289.28,-308 283.28,-302 283.28,-296 283.28,-296 283.28,-284 283.28,-284 283.28,-278 289.28,-272 295.28,-272 295.28,-272 495.81,-272 495.81,-272 501.81,-272 507.81,-278 507.81,-284 507.81,-284 507.81,-296 507.81,-296 507.81,-302 501.81,-308 495.81,-308"/>
+<text xml:space="preserve" text-anchor="middle" x="395.54" y="-287" font-family="sans-serif" font-size="10.00">aws_iam_role_policy_attachment.api_secret_access</text>
+</g>
+<!-- module.app_aws.aws_iam_role_policy_attachment.api_secret_access&#45;&gt;module.app_aws.aws_iam_policy.secret_access -->
+<g id="edge17" class="edge">
+<title>module.app_aws.aws_iam_role_policy_attachment.api_secret_access-&gt;module.app_aws.aws_iam_policy.secret_access</title>
+<path fill="none" stroke="#7a7a7a" d="M508.17,-303.78C537.5,-307.4 568.46,-311.22 595.47,-314.56"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="594.97,-316.96 602.22,-315.39 595.58,-312.1 594.97,-316.96"/>
+</g>
+<!-- module.app_aws.aws_iam_role_policy_attachment.api_secret_access&#45;&gt;module.app_aws.aws_iam_role.api -->
+<g id="edge18" class="edge">
+<title>module.app_aws.aws_iam_role_policy_attachment.api_secret_access-&gt;module.app_aws.aws_iam_role.api</title>
+<path fill="none" stroke="#7a7a7a" d="M473.44,-308.42C487.8,-312.83 502.48,-318.03 515.86,-324 541.76,-335.56 544.22,-345.88 569.86,-358 586.04,-365.65 604.42,-372.34 621.07,-377.71"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="620.24,-380.02 627.65,-379.79 621.71,-375.35 620.24,-380.02"/>
+</g>
+<!-- module.app_aws.aws_iam_role_policy_attachment.worker_secret_access -->
+<g id="node18" class="node">
+<title>module.app_aws.aws_iam_role_policy_attachment.worker_secret_access</title>
+<path fill="#d3f9d8" stroke="#666666" d="M503.86,-376C503.86,-376 287.23,-376 287.23,-376 281.23,-376 275.23,-370 275.23,-364 275.23,-364 275.23,-352 275.23,-352 275.23,-346 281.23,-340 287.23,-340 287.23,-340 503.86,-340 503.86,-340 509.86,-340 515.86,-346 515.86,-352 515.86,-352 515.86,-364 515.86,-364 515.86,-370 509.86,-376 503.86,-376"/>
+<text xml:space="preserve" text-anchor="middle" x="395.54" y="-355" font-family="sans-serif" font-size="10.00">aws_iam_role_policy_attachment.worker_secret_access</text>
+</g>
+<!-- module.app_aws.aws_iam_role_policy_attachment.worker_secret_access&#45;&gt;module.app_aws.aws_iam_policy.secret_access -->
+<g id="edge19" class="edge">
+<title>module.app_aws.aws_iam_role_policy_attachment.worker_secret_access-&gt;module.app_aws.aws_iam_policy.secret_access</title>
+<path fill="none" stroke="#7a7a7a" d="M516.15,-343.24C543.01,-339.92 570.82,-336.49 595.37,-333.46"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="595.42,-335.92 602.07,-332.63 594.82,-331.06 595.42,-335.92"/>
+</g>
+<!-- module.app_aws.aws_iam_role_policy_attachment.worker_secret_access&#45;&gt;module.app_aws.aws_iam_role.worker -->
+<g id="edge20" class="edge">
+<title>module.app_aws.aws_iam_role_policy_attachment.worker_secret_access-&gt;module.app_aws.aws_iam_role.worker</title>
+<path fill="none" stroke="#7a7a7a" d="M473.44,-376.42C487.8,-380.83 502.48,-386.03 515.86,-392 541.76,-403.56 544.22,-413.88 569.86,-426 583.54,-432.47 598.79,-438.25 613.24,-443.13"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="612.32,-445.4 619.73,-445.27 613.85,-440.75 612.32,-445.4"/>
+</g>
+<!-- module.eks.data.aws_iam_policy_document.cluster_assume_role -->
+<g id="node20" class="node">
+<title>module.eks.data.aws_iam_policy_document.cluster_assume_role</title>
+<path fill="#fff3bf" stroke="#666666" d="M1630.57,-594C1630.57,-594 1425.3,-594 1425.3,-594 1419.3,-594 1413.3,-588 1413.3,-582 1413.3,-582 1413.3,-570 1413.3,-570 1413.3,-564 1419.3,-558 1425.3,-558 1425.3,-558 1630.57,-558 1630.57,-558 1636.57,-558 1642.57,-564 1642.57,-570 1642.57,-570 1642.57,-582 1642.57,-582 1642.57,-588 1636.57,-594 1630.57,-594"/>
+<text xml:space="preserve" text-anchor="middle" x="1527.93" y="-573" font-family="sans-serif" font-size="10.00">data.aws_iam_policy_document.cluster_assume_role</text>
+</g>
+<!-- module.eks.data.aws_iam_policy_document.node_assume_role -->
+<g id="node21" class="node">
+<title>module.eks.data.aws_iam_policy_document.node_assume_role</title>
+<path fill="#fff3bf" stroke="#666666" d="M1347.3,-798C1347.3,-798 1149.24,-798 1149.24,-798 1143.24,-798 1137.24,-792 1137.24,-786 1137.24,-786 1137.24,-774 1137.24,-774 1137.24,-768 1143.24,-762 1149.24,-762 1149.24,-762 1347.3,-762 1347.3,-762 1353.3,-762 1359.3,-768 1359.3,-774 1359.3,-774 1359.3,-786 1359.3,-786 1359.3,-792 1353.3,-798 1347.3,-798"/>
+<text xml:space="preserve" text-anchor="middle" x="1248.27" y="-777" font-family="sans-serif" font-size="10.00">data.aws_iam_policy_document.node_assume_role</text>
+</g>
+<!-- module.eks.data.aws_iam_policy_document.pod_identity_assume_role -->
+<g id="node22" class="node">
+<title>module.eks.data.aws_iam_policy_document.pod_identity_assume_role</title>
+<path fill="#fff3bf" stroke="#666666" d="M1071.24,-662C1071.24,-662 842.07,-662 842.07,-662 836.07,-662 830.07,-656 830.07,-650 830.07,-650 830.07,-638 830.07,-638 830.07,-632 836.07,-626 842.07,-626 842.07,-626 1071.24,-626 1071.24,-626 1077.24,-626 1083.24,-632 1083.24,-638 1083.24,-638 1083.24,-650 1083.24,-650 1083.24,-656 1077.24,-662 1071.24,-662"/>
+<text xml:space="preserve" text-anchor="middle" x="956.66" y="-641" font-family="sans-serif" font-size="10.00">data.aws_iam_policy_document.pod_identity_assume_role</text>
+</g>
+<!-- module.eks.aws_eks_addon.ebs_csi -->
+<g id="node23" class="node">
+<title>module.eks.aws_eks_addon.ebs_csi</title>
+<path fill="#ffd8a8" stroke="#666666" d="M154.24,-628C154.24,-628 66.99,-628 66.99,-628 60.99,-628 54.99,-622 54.99,-616 54.99,-616 54.99,-604 54.99,-604 54.99,-598 60.99,-592 66.99,-592 66.99,-592 154.24,-592 154.24,-592 160.24,-592 166.24,-598 166.24,-604 166.24,-604 166.24,-616 166.24,-616 166.24,-622 160.24,-628 154.24,-628"/>
+<text xml:space="preserve" text-anchor="middle" x="110.61" y="-607" font-family="sans-serif" font-size="10.00">aws_eks_addon.ebs_csi</text>
+</g>
+<!-- module.eks.aws_eks_addon.pod_identity_agent -->
+<g id="node24" class="node">
+<title>module.eks.aws_eks_addon.pod_identity_agent</title>
+<path fill="#ffd8a8" stroke="#666666" d="M463.06,-594C463.06,-594 328.03,-594 328.03,-594 322.03,-594 316.03,-588 316.03,-582 316.03,-582 316.03,-570 316.03,-570 316.03,-564 322.03,-558 328.03,-558 328.03,-558 463.06,-558 463.06,-558 469.06,-558 475.06,-564 475.06,-570 475.06,-570 475.06,-582 475.06,-582 475.06,-588 469.06,-594 463.06,-594"/>
+<text xml:space="preserve" text-anchor="middle" x="395.54" y="-573" font-family="sans-serif" font-size="10.00">aws_eks_addon.pod_identity_agent</text>
+</g>
+<!-- module.eks.aws_eks_addon.ebs_csi&#45;&gt;module.eks.aws_eks_addon.pod_identity_agent -->
+<g id="edge21" class="edge">
+<title>module.eks.aws_eks_addon.ebs_csi-&gt;module.eks.aws_eks_addon.pod_identity_agent</title>
+<path fill="none" stroke="#7a7a7a" d="M166.5,-603.4C206.52,-598.59 261.57,-591.98 307.55,-586.45"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="307.57,-588.92 314.22,-585.65 306.98,-584.05 307.57,-588.92"/>
+</g>
+<!-- module.eks.aws_iam_role_policy_attachment.ebs_csi -->
+<g id="node31" class="node">
+<title>module.eks.aws_iam_role_policy_attachment.ebs_csi</title>
+<path fill="#d3f9d8" stroke="#666666" d="M474.99,-662C474.99,-662 316.1,-662 316.1,-662 310.1,-662 304.1,-656 304.1,-650 304.1,-650 304.1,-638 304.1,-638 304.1,-632 310.1,-626 316.1,-626 316.1,-626 474.99,-626 474.99,-626 480.99,-626 486.99,-632 486.99,-638 486.99,-638 486.99,-650 486.99,-650 486.99,-656 480.99,-662 474.99,-662"/>
+<text xml:space="preserve" text-anchor="middle" x="395.54" y="-641" font-family="sans-serif" font-size="10.00">aws_iam_role_policy_attachment.ebs_csi</text>
+</g>
+<!-- module.eks.aws_eks_addon.ebs_csi&#45;&gt;module.eks.aws_iam_role_policy_attachment.ebs_csi -->
+<g id="edge22" class="edge">
+<title>module.eks.aws_eks_addon.ebs_csi-&gt;module.eks.aws_iam_role_policy_attachment.ebs_csi</title>
+<path fill="none" stroke="#7a7a7a" d="M166.5,-616.6C203.04,-620.99 252.09,-626.88 295.34,-632.08"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="294.88,-634.49 302.12,-632.89 295.46,-629.63 294.88,-634.49"/>
+</g>
+<!-- module.eks.aws_eks_addon.pod_identity_agent&#45;&gt;module.eks.aws_eks_cluster.job_queue -->
+<g id="edge23" class="edge">
+<title>module.eks.aws_eks_addon.pod_identity_agent-&gt;module.eks.aws_eks_cluster.job_queue</title>
+<path fill="none" stroke="#7a7a7a" d="M475.47,-576C515.24,-576 563.07,-576 601.58,-576"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="601.13,-578.45 608.13,-576 601.13,-573.55 601.13,-578.45"/>
+</g>
+<!-- module.eks.aws_iam_role_policy_attachment.cluster -->
+<g id="node30" class="node">
+<title>module.eks.aws_iam_role_policy_attachment.cluster</title>
+<path fill="#d3f9d8" stroke="#666666" d="M1034.71,-594C1034.71,-594 878.6,-594 878.6,-594 872.6,-594 866.6,-588 866.6,-582 866.6,-582 866.6,-570 866.6,-570 866.6,-564 872.6,-558 878.6,-558 878.6,-558 1034.71,-558 1034.71,-558 1040.71,-558 1046.71,-564 1046.71,-570 1046.71,-570 1046.71,-582 1046.71,-582 1046.71,-588 1040.71,-594 1034.71,-594"/>
+<text xml:space="preserve" text-anchor="middle" x="956.66" y="-573" font-family="sans-serif" font-size="10.00">aws_iam_role_policy_attachment.cluster</text>
+</g>
+<!-- module.eks.aws_eks_cluster.job_queue&#45;&gt;module.eks.aws_iam_role_policy_attachment.cluster -->
+<g id="edge24" class="edge">
+<title>module.eks.aws_eks_cluster.job_queue-&gt;module.eks.aws_iam_role_policy_attachment.cluster</title>
+<path fill="none" stroke="#7a7a7a" d="M736.13,-576C771.83,-576 817.45,-576 857.85,-576"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="857.61,-578.45 864.61,-576 857.61,-573.55 857.61,-578.45"/>
+</g>
+<!-- module.network.aws_subnet.public -->
+<g id="node39" class="node">
+<title>module.network.aws_subnet.public</title>
+<path fill="#e5dbff" stroke="#666666" d="M989.73,-948C989.73,-948 923.58,-948 923.58,-948 917.58,-948 911.58,-942 911.58,-936 911.58,-936 911.58,-924 911.58,-924 911.58,-918 917.58,-912 923.58,-912 923.58,-912 989.73,-912 989.73,-912 995.73,-912 1001.73,-918 1001.73,-924 1001.73,-924 1001.73,-936 1001.73,-936 1001.73,-942 995.73,-948 989.73,-948"/>
+<text xml:space="preserve" text-anchor="middle" x="956.66" y="-927" font-family="sans-serif" font-size="10.00">aws_subnet.public</text>
+</g>
+<!-- module.eks.aws_eks_cluster.job_queue&#45;&gt;module.network.aws_subnet.public -->
+<g id="edge25" class="edge">
+<title>module.eks.aws_eks_cluster.job_queue-&gt;module.network.aws_subnet.public</title>
+<path fill="none" stroke="#7a7a7a" d="M736.1,-585.29C751.07,-590.33 765.72,-598.08 776.07,-610 863.22,-710.27 737.2,-809.01 830.07,-904 848.74,-923.09 877.49,-930 902.76,-931.95"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="902.54,-934.4 909.67,-932.35 902.82,-929.5 902.54,-934.4"/>
+</g>
+<!-- module.eks.aws_eks_node_group.workers -->
+<g id="node26" class="node">
+<title>module.eks.aws_eks_node_group.workers</title>
+<path fill="#ffd8a8" stroke="#666666" d="M452.23,-764C452.23,-764 338.86,-764 338.86,-764 332.86,-764 326.86,-758 326.86,-752 326.86,-752 326.86,-740 326.86,-740 326.86,-734 332.86,-728 338.86,-728 338.86,-728 452.23,-728 452.23,-728 458.23,-728 464.23,-734 464.23,-740 464.23,-740 464.23,-752 464.23,-752 464.23,-758 458.23,-764 452.23,-764"/>
+<text xml:space="preserve" text-anchor="middle" x="395.54" y="-743" font-family="sans-serif" font-size="10.00">aws_eks_node_group.workers</text>
+</g>
+<!-- module.eks.aws_eks_node_group.workers&#45;&gt;module.eks.aws_eks_cluster.job_queue -->
+<g id="edge26" class="edge">
+<title>module.eks.aws_eks_node_group.workers-&gt;module.eks.aws_eks_cluster.job_queue</title>
+<path fill="none" stroke="#7a7a7a" d="M437.42,-727.6C461.7,-715.53 492.24,-698.25 515.86,-678 545.15,-652.88 538.24,-632.13 569.86,-610 579.56,-603.21 590.72,-597.7 602.01,-593.25"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="602.71,-595.6 608.42,-590.86 601,-591.01 602.71,-595.6"/>
+</g>
+<!-- module.eks.aws_iam_role_policy_attachment.node_cni -->
+<g id="node32" class="node">
+<title>module.eks.aws_iam_role_policy_attachment.node_cni</title>
+<path fill="#d3f9d8" stroke="#666666" d="M756.02,-798C756.02,-798 589.91,-798 589.91,-798 583.91,-798 577.91,-792 577.91,-786 577.91,-786 577.91,-774 577.91,-774 577.91,-768 583.91,-762 589.91,-762 589.91,-762 756.02,-762 756.02,-762 762.02,-762 768.02,-768 768.02,-774 768.02,-774 768.02,-786 768.02,-786 768.02,-792 762.02,-798 756.02,-798"/>
+<text xml:space="preserve" text-anchor="middle" x="672.97" y="-777" font-family="sans-serif" font-size="10.00">aws_iam_role_policy_attachment.node_cni</text>
+</g>
+<!-- module.eks.aws_eks_node_group.workers&#45;&gt;module.eks.aws_iam_role_policy_attachment.node_cni -->
+<g id="edge27" class="edge">
+<title>module.eks.aws_eks_node_group.workers-&gt;module.eks.aws_iam_role_policy_attachment.node_cni</title>
+<path fill="none" stroke="#7a7a7a" d="M464.63,-754.4C496.19,-758.3 534.37,-763.01 569.32,-767.33"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="568.91,-769.75 576.15,-768.17 569.51,-764.88 568.91,-769.75"/>
+</g>
+<!-- module.eks.aws_iam_role_policy_attachment.node_ecr -->
+<g id="node33" class="node">
+<title>module.eks.aws_iam_role_policy_attachment.node_ecr</title>
+<path fill="#d3f9d8" stroke="#666666" d="M756.02,-866C756.02,-866 589.92,-866 589.92,-866 583.92,-866 577.92,-860 577.92,-854 577.92,-854 577.92,-842 577.92,-842 577.92,-836 583.92,-830 589.92,-830 589.92,-830 756.02,-830 756.02,-830 762.02,-830 768.02,-836 768.02,-842 768.02,-842 768.02,-854 768.02,-854 768.02,-860 762.02,-866 756.02,-866"/>
+<text xml:space="preserve" text-anchor="middle" x="672.97" y="-845" font-family="sans-serif" font-size="10.00">aws_iam_role_policy_attachment.node_ecr</text>
+</g>
+<!-- module.eks.aws_eks_node_group.workers&#45;&gt;module.eks.aws_iam_role_policy_attachment.node_ecr -->
+<g id="edge28" class="edge">
+<title>module.eks.aws_eks_node_group.workers-&gt;module.eks.aws_iam_role_policy_attachment.node_ecr</title>
+<path fill="none" stroke="#7a7a7a" d="M441.55,-764.41C476.39,-778.47 525.95,-798.09 569.86,-814 581.75,-818.31 594.48,-822.71 606.79,-826.87"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="605.96,-829.17 613.37,-829.07 607.51,-824.52 605.96,-829.17"/>
+</g>
+<!-- module.eks.aws_iam_role_policy_attachment.node_worker -->
+<g id="node34" class="node">
+<title>module.eks.aws_iam_role_policy_attachment.node_worker</title>
+<path fill="#d3f9d8" stroke="#666666" d="M764.07,-730C764.07,-730 581.86,-730 581.86,-730 575.86,-730 569.86,-724 569.86,-718 569.86,-718 569.86,-706 569.86,-706 569.86,-700 575.86,-694 581.86,-694 581.86,-694 764.07,-694 764.07,-694 770.07,-694 776.07,-700 776.07,-706 776.07,-706 776.07,-718 776.07,-718 776.07,-724 770.07,-730 764.07,-730"/>
+<text xml:space="preserve" text-anchor="middle" x="672.97" y="-709" font-family="sans-serif" font-size="10.00">aws_iam_role_policy_attachment.node_worker</text>
+</g>
+<!-- module.eks.aws_eks_node_group.workers&#45;&gt;module.eks.aws_iam_role_policy_attachment.node_worker -->
+<g id="edge29" class="edge">
+<title>module.eks.aws_eks_node_group.workers-&gt;module.eks.aws_iam_role_policy_attachment.node_worker</title>
+<path fill="none" stroke="#7a7a7a" d="M464.63,-737.6C493.78,-734 528.57,-729.7 561.26,-725.67"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="561.37,-728.12 568.02,-724.83 560.77,-723.26 561.37,-728.12"/>
+</g>
+<!-- module.eks.aws_iam_role.cluster -->
+<g id="node27" class="node">
+<title>module.eks.aws_iam_role.cluster</title>
+<path fill="#d0ebff" stroke="#666666" d="M1286.89,-594C1286.89,-594 1209.64,-594 1209.64,-594 1203.64,-594 1197.64,-588 1197.64,-582 1197.64,-582 1197.64,-570 1197.64,-570 1197.64,-564 1203.64,-558 1209.64,-558 1209.64,-558 1286.89,-558 1286.89,-558 1292.89,-558 1298.89,-564 1298.89,-570 1298.89,-570 1298.89,-582 1298.89,-582 1298.89,-588 1292.89,-594 1286.89,-594"/>
+<text xml:space="preserve" text-anchor="middle" x="1248.27" y="-573" font-family="sans-serif" font-size="10.00">aws_iam_role.cluster</text>
+</g>
+<!-- module.eks.aws_iam_role.cluster&#45;&gt;module.eks.data.aws_iam_policy_document.cluster_assume_role -->
+<g id="edge30" class="edge">
+<title>module.eks.aws_iam_role.cluster-&gt;module.eks.data.aws_iam_policy_document.cluster_assume_role</title>
+<path fill="none" stroke="#7a7a7a" d="M1299.23,-576C1328.7,-576 1367.38,-576 1404.48,-576"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="1404.35,-578.45 1411.35,-576 1404.35,-573.55 1404.35,-578.45"/>
+</g>
+<!-- module.eks.aws_iam_role.ebs_csi -->
+<g id="node28" class="node">
+<title>module.eks.aws_iam_role.ebs_csi</title>
+<path fill="#d0ebff" stroke="#666666" d="M712.98,-662C712.98,-662 632.95,-662 632.95,-662 626.95,-662 620.95,-656 620.95,-650 620.95,-650 620.95,-638 620.95,-638 620.95,-632 626.95,-626 632.95,-626 632.95,-626 712.98,-626 712.98,-626 718.98,-626 724.98,-632 724.98,-638 724.98,-638 724.98,-650 724.98,-650 724.98,-656 718.98,-662 712.98,-662"/>
+<text xml:space="preserve" text-anchor="middle" x="672.97" y="-641" font-family="sans-serif" font-size="10.00">aws_iam_role.ebs_csi</text>
+</g>
+<!-- module.eks.aws_iam_role.ebs_csi&#45;&gt;module.eks.data.aws_iam_policy_document.pod_identity_assume_role -->
+<g id="edge31" class="edge">
+<title>module.eks.aws_iam_role.ebs_csi-&gt;module.eks.data.aws_iam_policy_document.pod_identity_assume_role</title>
+<path fill="none" stroke="#7a7a7a" d="M725.3,-644C752.48,-644 787.26,-644 821.5,-644"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="821.21,-646.45 828.21,-644 821.21,-641.55 821.21,-646.45"/>
+</g>
+<!-- module.eks.aws_iam_role.node -->
+<g id="node29" class="node">
+<title>module.eks.aws_iam_role.node</title>
+<path fill="#d0ebff" stroke="#666666" d="M991.67,-798C991.67,-798 921.64,-798 921.64,-798 915.64,-798 909.64,-792 909.64,-786 909.64,-786 909.64,-774 909.64,-774 909.64,-768 915.64,-762 921.64,-762 921.64,-762 991.67,-762 991.67,-762 997.67,-762 1003.67,-768 1003.67,-774 1003.67,-774 1003.67,-786 1003.67,-786 1003.67,-792 997.67,-798 991.67,-798"/>
+<text xml:space="preserve" text-anchor="middle" x="956.66" y="-777" font-family="sans-serif" font-size="10.00">aws_iam_role.node</text>
+</g>
+<!-- module.eks.aws_iam_role.node&#45;&gt;module.eks.data.aws_iam_policy_document.node_assume_role -->
+<g id="edge32" class="edge">
+<title>module.eks.aws_iam_role.node-&gt;module.eks.data.aws_iam_policy_document.node_assume_role</title>
+<path fill="none" stroke="#7a7a7a" d="M1003.87,-780C1037.47,-780 1084.57,-780 1128.4,-780"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="1128.31,-782.45 1135.31,-780 1128.31,-777.55 1128.31,-782.45"/>
+</g>
+<!-- module.eks.aws_iam_role_policy_attachment.cluster&#45;&gt;module.eks.aws_iam_role.cluster -->
+<g id="edge33" class="edge">
+<title>module.eks.aws_iam_role_policy_attachment.cluster-&gt;module.eks.aws_iam_role.cluster</title>
+<path fill="none" stroke="#7a7a7a" d="M1046.91,-576C1093.15,-576 1148.3,-576 1189.02,-576"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="1188.97,-578.45 1195.97,-576 1188.97,-573.55 1188.97,-578.45"/>
+</g>
+<!-- module.eks.aws_iam_role_policy_attachment.ebs_csi&#45;&gt;module.eks.aws_iam_role.ebs_csi -->
+<g id="edge34" class="edge">
+<title>module.eks.aws_iam_role_policy_attachment.ebs_csi-&gt;module.eks.aws_iam_role.ebs_csi</title>
+<path fill="none" stroke="#7a7a7a" d="M487.49,-644C528.57,-644 575.95,-644 612.4,-644"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="611.97,-646.45 618.97,-644 611.97,-641.55 611.97,-646.45"/>
+</g>
+<!-- module.eks.aws_iam_role_policy_attachment.node_cni&#45;&gt;module.eks.aws_iam_role.node -->
+<g id="edge35" class="edge">
+<title>module.eks.aws_iam_role_policy_attachment.node_cni-&gt;module.eks.aws_iam_role.node</title>
+<path fill="none" stroke="#7a7a7a" d="M768.16,-780C812.32,-780 863.38,-780 901.06,-780"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="900.85,-782.45 907.85,-780 900.85,-777.55 900.85,-782.45"/>
+</g>
+<!-- module.eks.aws_iam_role_policy_attachment.node_ecr&#45;&gt;module.eks.aws_iam_role.node -->
+<g id="edge36" class="edge">
+<title>module.eks.aws_iam_role_policy_attachment.node_ecr-&gt;module.eks.aws_iam_role.node</title>
+<path fill="none" stroke="#7a7a7a" d="M750.57,-829.51C798.32,-817.98 858.61,-803.43 901.44,-793.09"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="901.79,-795.52 908.02,-791.5 900.64,-790.76 901.79,-795.52"/>
+</g>
+<!-- module.eks.aws_iam_role_policy_attachment.node_worker&#45;&gt;module.eks.aws_iam_role.node -->
+<g id="edge37" class="edge">
+<title>module.eks.aws_iam_role_policy_attachment.node_worker-&gt;module.eks.aws_iam_role.node</title>
+<path fill="none" stroke="#7a7a7a" d="M750.57,-730.49C798.32,-742.02 858.61,-756.57 901.44,-766.91"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="900.64,-769.24 908.02,-768.5 901.79,-764.48 900.64,-769.24"/>
+</g>
+<!-- module.network.aws_internet_gateway.job_queue -->
+<g id="node35" class="node">
+<title>module.network.aws_internet_gateway.job_queue</title>
+<path fill="#e5dbff" stroke="#666666" d="M1019.44,-1084C1019.44,-1084 893.88,-1084 893.88,-1084 887.88,-1084 881.88,-1078 881.88,-1072 881.88,-1072 881.88,-1060 881.88,-1060 881.88,-1054 887.88,-1048 893.88,-1048 893.88,-1048 1019.44,-1048 1019.44,-1048 1025.44,-1048 1031.44,-1054 1031.44,-1060 1031.44,-1060 1031.44,-1072 1031.44,-1072 1031.44,-1078 1025.44,-1084 1019.44,-1084"/>
+<text xml:space="preserve" text-anchor="middle" x="956.66" y="-1063" font-family="sans-serif" font-size="10.00">aws_internet_gateway.job_queue</text>
+</g>
+<!-- module.network.aws_vpc.job_queue -->
+<g id="node40" class="node">
+<title>module.network.aws_vpc.job_queue</title>
+<path fill="#e5dbff" stroke="#666666" d="M1283.84,-1016C1283.84,-1016 1212.7,-1016 1212.7,-1016 1206.7,-1016 1200.7,-1010 1200.7,-1004 1200.7,-1004 1200.7,-992 1200.7,-992 1200.7,-986 1206.7,-980 1212.7,-980 1212.7,-980 1283.84,-980 1283.84,-980 1289.84,-980 1295.84,-986 1295.84,-992 1295.84,-992 1295.84,-1004 1295.84,-1004 1295.84,-1010 1289.84,-1016 1283.84,-1016"/>
+<text xml:space="preserve" text-anchor="middle" x="1248.27" y="-995" font-family="sans-serif" font-size="10.00">aws_vpc.job_queue</text>
+</g>
+<!-- module.network.aws_internet_gateway.job_queue&#45;&gt;module.network.aws_vpc.job_queue -->
+<g id="edge38" class="edge">
+<title>module.network.aws_internet_gateway.job_queue-&gt;module.network.aws_vpc.job_queue</title>
+<path fill="none" stroke="#7a7a7a" d="M1031.86,-1048.58C1081.88,-1036.83 1146.77,-1021.6 1192.2,-1010.93"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="1192.72,-1013.32 1198.98,-1009.34 1191.6,-1008.55 1192.72,-1013.32"/>
+</g>
+<!-- module.network.aws_route.internet -->
+<g id="node36" class="node">
+<title>module.network.aws_route.internet</title>
+<path fill="#e5dbff" stroke="#666666" d="M706.04,-1050C706.04,-1050 639.9,-1050 639.9,-1050 633.9,-1050 627.9,-1044 627.9,-1038 627.9,-1038 627.9,-1026 627.9,-1026 627.9,-1020 633.9,-1014 639.9,-1014 639.9,-1014 706.04,-1014 706.04,-1014 712.04,-1014 718.04,-1020 718.04,-1026 718.04,-1026 718.04,-1038 718.04,-1038 718.04,-1044 712.04,-1050 706.04,-1050"/>
+<text xml:space="preserve" text-anchor="middle" x="672.97" y="-1029" font-family="sans-serif" font-size="10.00">aws_route.internet</text>
+</g>
+<!-- module.network.aws_route.internet&#45;&gt;module.network.aws_internet_gateway.job_queue -->
+<g id="edge39" class="edge">
+<title>module.network.aws_route.internet-&gt;module.network.aws_internet_gateway.job_queue</title>
+<path fill="none" stroke="#7a7a7a" d="M718.29,-1037.35C759.68,-1042.35 822.49,-1049.93 873.11,-1056.04"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="872.7,-1058.45 879.94,-1056.86 873.28,-1053.59 872.7,-1058.45"/>
+</g>
+<!-- module.network.aws_route_table.public -->
+<g id="node37" class="node">
+<title>module.network.aws_route_table.public</title>
+<path fill="#e5dbff" stroke="#666666" d="M999.17,-1016C999.17,-1016 914.14,-1016 914.14,-1016 908.14,-1016 902.14,-1010 902.14,-1004 902.14,-1004 902.14,-992 902.14,-992 902.14,-986 908.14,-980 914.14,-980 914.14,-980 999.17,-980 999.17,-980 1005.17,-980 1011.17,-986 1011.17,-992 1011.17,-992 1011.17,-1004 1011.17,-1004 1011.17,-1010 1005.17,-1016 999.17,-1016"/>
+<text xml:space="preserve" text-anchor="middle" x="956.66" y="-995" font-family="sans-serif" font-size="10.00">aws_route_table.public</text>
+</g>
+<!-- module.network.aws_route.internet&#45;&gt;module.network.aws_route_table.public -->
+<g id="edge40" class="edge">
+<title>module.network.aws_route.internet-&gt;module.network.aws_route_table.public</title>
+<path fill="none" stroke="#7a7a7a" d="M718.29,-1026.65C765.5,-1020.95 840.59,-1011.89 893.65,-1005.48"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="893.81,-1007.93 900.47,-1004.66 893.22,-1003.07 893.81,-1007.93"/>
+</g>
+<!-- module.network.aws_route_table.public&#45;&gt;module.network.aws_vpc.job_queue -->
+<g id="edge41" class="edge">
+<title>module.network.aws_route_table.public-&gt;module.network.aws_vpc.job_queue</title>
+<path fill="none" stroke="#7a7a7a" d="M1011.45,-998C1062.9,-998 1140.11,-998 1192.03,-998"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="1191.95,-1000.45 1198.95,-998 1191.95,-995.55 1191.95,-1000.45"/>
+</g>
+<!-- module.network.aws_route_table_association.public -->
+<g id="node38" class="node">
+<title>module.network.aws_route_table_association.public</title>
+<path fill="#e5dbff" stroke="#666666" d="M740.2,-948C740.2,-948 605.74,-948 605.74,-948 599.74,-948 593.74,-942 593.74,-936 593.74,-936 593.74,-924 593.74,-924 593.74,-918 599.74,-912 605.74,-912 605.74,-912 740.2,-912 740.2,-912 746.2,-912 752.2,-918 752.2,-924 752.2,-924 752.2,-936 752.2,-936 752.2,-942 746.2,-948 740.2,-948"/>
+<text xml:space="preserve" text-anchor="middle" x="672.97" y="-927" font-family="sans-serif" font-size="10.00">aws_route_table_association.public</text>
+</g>
+<!-- module.network.aws_route_table_association.public&#45;&gt;module.network.aws_route_table.public -->
+<g id="edge42" class="edge">
+<title>module.network.aws_route_table_association.public-&gt;module.network.aws_route_table.public</title>
+<path fill="none" stroke="#7a7a7a" d="M750.57,-948.49C795.47,-959.33 851.46,-972.85 893.59,-983.02"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="892.98,-985.39 900.36,-984.65 894.13,-980.63 892.98,-985.39"/>
+</g>
+<!-- module.network.aws_route_table_association.public&#45;&gt;module.network.aws_subnet.public -->
+<g id="edge43" class="edge">
+<title>module.network.aws_route_table_association.public-&gt;module.network.aws_subnet.public</title>
+<path fill="none" stroke="#7a7a7a" d="M752.43,-930C800.41,-930 860.48,-930 902.83,-930"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="902.81,-932.45 909.81,-930 902.81,-927.55 902.81,-932.45"/>
+</g>
+<!-- module.network.aws_subnet.public&#45;&gt;module.network.aws_vpc.job_queue -->
+<g id="edge44" class="edge">
+<title>module.network.aws_subnet.public-&gt;module.network.aws_vpc.job_queue</title>
+<path fill="none" stroke="#7a7a7a" d="M1001.96,-940.4C1053.05,-952.4 1137.09,-972.13 1192.3,-985.09"/>
+<polygon fill="#7a7a7a" stroke="#7a7a7a" points="1191.72,-987.47 1199.1,-986.69 1192.84,-982.7 1191.72,-987.47"/>
+</g>
+</g>
+</svg>
